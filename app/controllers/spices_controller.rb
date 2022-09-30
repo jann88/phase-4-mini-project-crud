@@ -1,4 +1,5 @@
 class SpicesController < ApplicationController
+    wrap_parameters format: []
     def index
         spices = Spice.all
         render json: spices
